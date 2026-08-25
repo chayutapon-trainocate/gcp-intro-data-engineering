@@ -6,7 +6,7 @@ import functions_framework
 bigquery_client = bigquery.Client()
 
 @functions_framework.cloud_event
-def loadBigQueryFromAvro(cloud_event):
+def loadBigQueryFromAvroPy(cloud_event):
     """
     Cloud Function - Avro on GCS to BQ
     Triggered by a change to a Cloud Storage bucket.
