@@ -24,7 +24,7 @@ def loadBigQueryFromAvroPy(cloud_event):
 
         # BigQuery configuration
         dataset_id = 'loadavro'
-        table_id = file_name.replace('.avro', '')
+        table_id = f"{file_name.replace('.avro', '')}_py"
 
         # Construct the table reference
         table_ref = bigquery_client.dataset(dataset_id).table(table_id)
