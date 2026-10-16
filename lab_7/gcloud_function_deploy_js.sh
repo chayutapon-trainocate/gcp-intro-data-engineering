@@ -1,3 +1,5 @@
+#!/bin/bash
+
 gcloud functions deploy loadBigQueryFromAvro \
     --gen2 \
     --runtime nodejs26 \
