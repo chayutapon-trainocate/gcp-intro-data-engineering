@@ -1,3 +1,5 @@
+#!/bin/bash
+
 gcloud functions deploy loadBigQueryFromAvroPy \
     --gen2 \
     --runtime python311 \
