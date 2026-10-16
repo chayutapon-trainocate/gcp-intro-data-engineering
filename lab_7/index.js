@@ -5,7 +5,7 @@ const {Storage} = require('@google-cloud/storage');
 const {BigQuery} = require('@google-cloud/bigquery');
 
 const storage = new Storage({ projectId: process.env.GOOGLE_CLOUD_PROJECT });
-const bigquery = new BigQuery({ projectId: process.env.GOOGLE_CLOUD_PROJECT
+const bigquery = new BigQuery({ projectId: process.env.GOOGLE_CLOUD_PROJECT });
 
 exports.loadBigQueryFromAvro = async (event, context) => {
     try {
