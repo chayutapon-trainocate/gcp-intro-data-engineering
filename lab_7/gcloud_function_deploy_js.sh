@@ -9,5 +9,5 @@ gcloud functions deploy loadBigQueryFromAvro \
     --trigger-event google.storage.object.finalize \
     --memory=512Mi \
     --timeout=540s \
-    --service-account=$PROJECT_NUMBER-compute@developer.gserviceaccount.com
+    --service-account=$PROJECT_NUMBER-compute@developer.gserviceaccount.com \
     --set-env-vars GOOGLE_CLOUD_PROJECT=$PROJECT_ID
